@@ -92,6 +92,7 @@ getNewQuestion = () => {
   acceptingAnswers = true;
 };
 
+// below the functions that generates questions anfter you click on the answer
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
     if (!acceptingAnswers) return;
@@ -116,11 +117,7 @@ choices.forEach(choice => {
   });
 });
 
-// incrementScore = num => {
-//   score += num;
-//   scoreText.innerText = score;
-// };
-
+// This is the timer function
 var downloadTimer = setInterval(function() {
   timeleft--;
   badGuess ? (timeleft -= 15) : "";
