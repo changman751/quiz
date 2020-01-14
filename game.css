@@ -33,8 +33,6 @@
   background-color: #dc3545;
 }
 
-/*hud*/
-
 #hud {
   display: flex;
   justify-content: space-between;
